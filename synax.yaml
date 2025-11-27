@@ -1,0 +1,18 @@
+#Trigger 
+trigger:
+#pool
+pool:
+# pool Setting 
+#Varibales
+Variables: 
+#Variable Defination 
+Parameters: 
+ # Parameter Defination 
+stages: 
+# Stages Definations 
+# Glone , Check Code Quality , Docker Image , Push to Docker Image , Deployment 
+#Jobs 
+jobs:
+#steps - We have to define the command to execute a Partuclar actions
+steps:
+#Steps Definations 
