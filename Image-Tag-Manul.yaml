@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: "muralisocial123/ust-test-image"
+      IMAGE_NAME: "muralisocial123/hr-app"
 
     steps:
       - name: Validate tag format

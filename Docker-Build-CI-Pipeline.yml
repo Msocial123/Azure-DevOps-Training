@@ -23,4 +23,7 @@ jobs:
       run: |
         docker build \
           -t muralisocial123/hr-app:v1.1.0 \
-          .        
+          . 
+    - name: Push docker image to Docker hub 
+      run: |
+        docker push muralisocial123/hr-app:v1.1.0             
