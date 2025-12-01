@@ -1,7 +1,13 @@
+apiVersion: v1 
+kind: Namespace 
+metadata:
+  name: murali-test-ns
+---
 apiVersion: apps/v1 
 kind: Deployment 
 metadata: 
   name: addeso-deployment 
+  namespace: murali-test-ns 
 spec: 
   replicas: 3 
   selector:
@@ -21,7 +27,8 @@ spec:
 apiVersion: v1 
 kind: Service
 metadata: 
-  name: addeso-deployment-svc 
+  name: addeso-deployment-svc
+  namespace: murali-test-ns  
 spec: 
   selector: 
     app: web 
